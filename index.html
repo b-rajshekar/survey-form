@@ -15,17 +15,33 @@
     <form id="survey-form">
         <div class="form-control">
              <label for="name">Name</label> <!--for name -->
-            <input type="text" id="name" placeholder="Enter your name">
+            <input type="text" id="name" placeholder="Enter your name" required>
         </div>
 
         <div class="form-control">
             <label for="email">Email</label> <!--for email -->
-            <input type="email" name="email" id="email" placeholder="Enter your email id">
+            <input type="email" name="email" id="email" placeholder="Enter your email id" required>
         </div>
 
           <div class="form-control">
               <label for="age">Age</label> <!--for number -->
-            <input type="number" id="age" placeholder="Enter your age">
+            <input type="number" id="number" placeholder="Enter your age (optional)">
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-r">Which option best describes you current role?</label>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="full-time">Full-time</option>
+                <option value="part-time">Part-time</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+
+        <div class="form-control">Would you recommend freeCodeCamp to a friend?</label>
+            <label for="recommend-1"><input type="radio" id="recommend-1" name="recommend">Definitely</label>
+            <label for="recommend-2"><input type="radio" id="recommend-2" name="recommend">Maybe</label>
+            <label for="recommend-3"><input type="radio" id="recommend-3" name="recommend">Not sure</label>
         </div>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
